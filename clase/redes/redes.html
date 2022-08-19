@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es-uy">
+    <head>
+        <title>LAN · Matias y Alter</title>
+        <link rel="icon" href="">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="portfolio, portafolio, webdesigner, webs, web">
+        <meta name="description" content="portfolio de kuda">
+        <meta name="author" content="KudaGH">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header id="header">
+        <h1 class="nameWeb">LAB REDES  <span>TRABAJO</span></h1>
+        <nav class="web">
+            <a href="/clase/index/index.html">Home</a>
+            <a href="/clase/auten/auten.html">Kerberos</a>
+            <a href="/clase/recursos/recursos.html">Recursos</a>
+            <a href="/clase/redes/redes.html">Config Redes</a>
+            <a href="/clase/active/active.html">Active Dir</a>
+        </nav>
+    </header>
+
+        <div class="container">
+            <section class="Inicio">
+                <h1>Configuracion de Red</h1>
+                <p class="parrafo">La <b>configuración de red</b> es el proceso de asignar configuraciones,
+                    políticas, flujos y controles de red.</p>
+                <img src="media/vpn.png" width="800px">
+            </section>
+
+            <hr>
+
+            <section class="2do">
+                <h2>Tipos de topologia/configuraciones</h2>
+                <p class="parrafo">• <b>Bus</b>: todos los nodos de la red están conectados a lo largo de una ruta lineal. Esta topología sencilla suele usarse en redes pequeñas..</br></br>
+                    • <b>Anillo</b>: los nodos están conectados en círculo, y el tráfico puede fluir en una dirección o en ambas. Las redes en anillo tienden a ser rentables, pero no tan escalables ni estables como otros tipos de topología de red..</br></br>
+                    • <b>Estrella</b>: un nodo central se conecta a todos los demás nodos de la red. Esta es una topología común y estable que se usa a menudo para redes de área local (LAN)..</br></br>
+                    • <b>Malla</b>: los nodos están vinculados de tal manera que existen múltiples rutas entre nodos..</br>Este tipo de topología aumenta la resistencia de la red, pero también su coste. Una red puede estar completamente mallada (todos los nodos se conectan a todos los demás) o parcialmente mallada (solo algunos nodos tienen múltiples conexiones a otros nodos)..</br></br>
+                    • <b>Árbol</b> (leaf-spine): varias topologías de estrella están conectadas juntas en una
+                    configuración de estrella más grande..</br></br>
+                    • <b>Híbrida</b>: se utiliza una combinación de distintas topologías dentro de una misma red.</br></p>
+                <img src="media/2er.JPG" width="800px">
+            </section>
+
+            <hr>
+
+            <section class="3ro">
+                <h2>Como configurar una red local desde 0</h2>
+                <p class="parrafo"><b>Puesta en marcha del router</b><br>
+                    <br><br>• Aquí conviene empezar por leer las instrucciones de nuestro nuevo router. Luego, cuando tengamos claro dónde están los puertos Ethernet, el resto
+                    de las conexiones y botones, ya estamos listos para comenzar. Nuestra primera tarea va a ser localizar la fuente de alimentación del router,
+                    introducirla en el conector de alimentación y después enchufarlo.
+                    <br><br>• A continuación, esperamos aproximadamente un par de minutos, hasta que veamos que se inicia de forma correcta. Seguidamente l lega el momento
+                    de añadirle el cableado que necesitamos para acceder a Internet. Habitualmente en los routers este cableado se inserta en la parte trasera.
+                    <br><br>• Dependiendo de que el router sea de fibra óptica o ADSL los pasos van a variar. En el caso de ser una sustitución de router una buena idea antes de
+                    empezar a hacer nada es anotar cómo están colocados los cables o hacer una fotografía. Seguidamente procederemos a la colocación del cableado de
+                    la siguiente forma:
+                    <br><br>• Si se trata de una conexión de fibra óptica con ONT conectamos el cable de red en el puerto del que está etiquetado como «Internet» o «WAN».
+                    Luego ese cable se inserta en el puerto Ethernet correspondiente de la ONT.
+                    <br><br>• En el caso de un router de fibra con ONT integrado, conectamos el latiguillo de fibra a nuestra roseta de fibra óptica. Un ejemplo son los HGU de
+                    Movistar.
+                    <br><br>• Si se trata de un router ADSL, conectamos un cable RJ-11 en el puerto DSL del router y luego lo insertamos en la roseta telefónica. En el caso de que
+                    necesitemos añadir un teléfono hay que añadirle los microfiltros correspondientes.
+                    <br><br>• Terminamos añadiendo un cable de red Ethernet a nuestro portátil u ordenador para configurarlo. También se podría hacer por Wi-Fi pero tendrías
+                    que meterle tu red Wi-Fi predeterminada. El inconveniente que tiene hacerlo por Wi-Fi es que luego cuando cambies los parámetros por seguridad,
+                    vas a tener que cambiar la conexión.<br>
+                    </p>
+            </section>
+            
+            <hr>
+
+            <section class="4to">
+                <h2>Como configurar una red local desde 0</h2>
+                <p class="parrafo"><b>Accede a la configuración web de tu router</b>
+                    <br><br>• Normalmente, la mayoría de routers tienen debajo una
+                    pegatina con todos los datos de acceso.
+                    <br><br>• Una cosa que nos puede dar problemas al configurar tu red
+                    doméstica desde cero es tener el TCP/IP de Windows en
+                    manual. Esto último es ideal para establecer una IP fija
+                    local para usar programas P2P o crear un servidor de algún
+                    tipo. Como el router viene de fábrica con el DHCP
+                    habilitado y puede asignar las IP locales, lo mejor será
+                    poner el TCP/IP de Windows en automático.
+                    <br><br>• Para ello en Windows 10 o Windows 11 seguiremos estos
+                    pasos:
+                    <br><br>• Vamos a <b>Menú de inicio.</b>
+                    <br><br>• Escribimos <b>Ver conexiones de red</b> y pulsamos enter.
+                    <br><br>• Seleccionamos nuestra conexión Ethernet o Wi-Fi (si es el
+                    caso) y con el botón derecho pulsamos en <b>Propiedades</b>.
+                    <br><br>• Hacemos doble clic en <b>Protocolo de Internet versión 4.</b><br>
+                    </p>
+                <img src="media/4ro.JPG" width="400px">
+            </section>
+        
+            <hr>
+
+            <section class="5to">
+                <h2>Como configurar red local doméstica en Windows</h2>
+                <p class="parrafo">Vamos a «<b>Menú de inicio, Panel de control, Cuentas de usuario</b>«, y
+                    hacemos clic en otro acceso que se llama «<b>Cuentas de usuario</b>» y
+                    terminamos pulsando en «<b>Administrar otra cuenta</b>«.</p>
+                <img src="media/5to.JPG" width="800px">
+            </section>
+
+            <hr>
+
+            <section class="6to">
+                <h2>Luego seguiremos estos pasos:</h2>
+                <p class="parrafo">• Agregar un nuevo usuario en configuración.
+                    <br><br>• Agregar otra persona a este equipo.
+                    <br><br>• No tengo los datos de inicio de sesión de esta
+                    persona.
+                    <br><br>• Agregar un usuario sin cuenta Microsoft ya
+                    que vamos a crear una cuenta local.
+                    <br><br>• A continuación, elegimos un nombre de
+                    usuario y una contraseña. Al terminar
+                    veremos todos los usuarios junto al que
+                    acabamos de crear. Seguidamente si hacemos
+                    doble clic en el nombre
+                    que elegiste mostrará nuevas opciones.
+                    <br><br>• Aquí lo que vamos a hacer pulsar es <b>Cambiar
+                    el tipo de Cuenta</b>. Esto nos va a permitir elegir
+                    entre un usuario estándar con menos
+                    permisos o uno con todos que sería la cuenta
+                    de administrador.</p>
+                <img src="media/6to.JPG" width="800px">
+            </section>
+
+            <hr>
+
+            <section class="7to">
+                <h2>Configura la red para compartir archivos</h2>
+                <p class="parrafo">Nuestro siguiente paso es ir a <b>Menú
+                    de inicio, Configuración, Red e
+                    Internet</b>. Después tenemos que ir a la
+                    sección <b>Ethernet</b> si estamos
+                    conectados por cable de red o al <b>WiFi</b> si lo estamos inalámbricamente. Ya
+                    dentro haríamos clic sobre el icono de
+                    la conexión actual.
+                    <br><br>• En este caso hay que seleccionar <b>perfil
+                    de red Privada</b> que es el que se utiliza
+                    para las redes domésticas, del trabajo
+                    u otro sitio de confianza.</p>
+                <img src="media/Captura.JPG" width="600px">
+            </section>
+
+            <hr>
+
+            <section class="8vo">
+                <h2>A continuación</h2>
+                <p class="parrafo">Volvemos
+                    otra vez a <b>Red e Internet</b>,
+                    escogemos el
+                    apartado <b>Estado</b>, y dentro de
+                    configuración avanzada
+                    pulsamos en <b>Centro de redes
+                    y recursos compartidos</b>.
+                    Luego hacemos clic
+                    en <b/>Cambiar configuración de
+                    uso compartido avanzado</b></p>
+                <img src="media/asd.JPG" width="600px">
+                <p class="parrafo">Entonces, procedemos a configurar tu red de la siguiente forma:</p>
+                <img src="media/dsa.JPG" width="600px">
+                <p class="parrafo">Seguidamente pulsamos en <b>Todas las redes</b> para desplegar más opciones y configuramos así:</p>
+                <img src="media/dsd.JPG" width="600px">
+            </section>
+
+            <hr>
+
+            <section class="7to">
+                <h2>Configurar tu red para añadir equipos</h2>
+                <p class="parrafo">Para que los equipos puedan funcionar en
+                    red, tienen que tener un nombre y
+                    pertenecer al mismo grupo de trabajo. Para
+                    ello, seguiremos estos pasos <b>Menú de
+                    inicio, Panel de control, Sistema y
+                    seguridad, Sistema</b> y entonces haremos clic
+                    en <b>Configuración avanzada del sistema</b>.
+                    <br><br>• Después iremos a la pestaña <b>Nombre del
+                    equipo</b>, donde añadiremos una <b>Descripción
+                    del equipo</b>, hacemos clic en <b>Aplicar</b> y
+                    pulsamos en el botón <b>Cambiar</b>.</p>
+                <img src="media/yyy.JPG" width="800px">
+            </section>
+
+            <hr>
+
+            <section class="7to">
+                <h2>Aquí lo que tenemos que hacer</h2>
+                <p class="parrafo">Es escribir
+                    un <b>Nombre de equipo</b>,
+                    un <b>Grupo de trabajo</b> y
+                    pulsar <b>Aceptar</b>.
+                    Recorda que todos los
+                    ordenadores deben
+                    pertenecer al mismo
+                    grupo de trabajo. Una
+                    vez hecho, toca reiniciar
+                    ese equipo para que los
+                    cambios surtan efecto.</p>
+                <img src="media/pc.JPG" width="600px">
+            </section>
+        
+        </div>
+
+        <br>
+
+        <footer>
+            <section>
+                <a href="#header" id="comienzo">Ir al Comienzo</a>
+            </section>
+                 
+            <p>Lab de Redes de Area Local</p>
+        </footer>
+
+    </body>
+</html>

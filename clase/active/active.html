@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es-uy">
+    <head>
+        <title>LAN · Matias y Alter</title>
+        <link rel="icon" href="">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="portfolio, portafolio, webdesigner, webs, web">
+        <meta name="description" content="portfolio de kuda">
+        <meta name="author" content="KudaGH">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="nameWeb">LAB REDES  <span>TRABAJO</span></h1>
+            <nav class="web">
+                <a href="/clase/index/index.html">Home</a>
+                <a href="/clase/auten/auten.html">Kerberos</a>
+                <a href="/clase/recursos/recursos.html">Recursos</a>
+                <a href="/clase/redes/redes.html">Config Redes</a>
+                <a href="/clase/active/active.html">Active Dir</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <section class="Inicio">
+                <h1>Active Directory</h1>
+                <p class="bolder">Los Active Directorys son almacenes de información acerca de los objetos de una red, facilita su búsqueda y uso por parte de los usuarios y administradores. Este mismo usa un almacén de datos estructurado como base para una organización jerárquica lógica de la información del directorio</p>
+                <img src="media/icon.jpg" width="800px">
+            </section>
+            
+            <hr>
+            
+            <section class="queEs">
+                <h2>¿Que es un Active Directory?</h2>
+                <p class="parrafo">Es un servicio de directorio desarrollado por <b>Microsoft</b> para redes <b>Windows</b>. Este mismo desempeña un papel importante para las empresas con recursos informáticos complejos, este mismo tiene servicios que controlan gran parte de la actividad que se desarrolla en su entorno TI. En particular, se aseguran de que cada persona sea quien dice ser mediante una autenticacion, generalmente al verificar el ID de usuario y la contraseña que ingresa, y le permite acceder solo a los datos que tiene permitido usar dicho usuario. Esto se puede lograr ya que Active Directory tambien cuenta con una base de datos que contiene información crítica sobre su entorno, incluidos los usuarios y las computadoras que hay y que permisos tiene cada una de ellas. Por ejemplo, la base de datos puede contener una lista de 50 cuentas de usuario con informacion como el puesto de trabajo, el número de teléfono y la contraseña de cada persona. También registrará sus permisos para que queden guardados y solo puedan ser editados por administradores.</p>
+                <img src="media/tres.png" width="800px">
+            </section>
+
+            <hr>
+
+            <section class="comoFunciona">
+                <h2>¿Como funciona?</h2>
+                <p class="parrafo">Los servidores que ejecutan AD DS se denominan controladores de dominio. Las organizaciones normalmente tienen varios dominios y cada uno tiene una copia del directorio para todo el dominio. Los cambios realizados en el directorio en un controlador de dominio, como la actualización de la contraseña o la eliminación de una cuenta de usuario, se replican en los otros controladores de dominio para que todos estén actualizados. Un servidor de catálogo global es un controlador de dominio que almacena una copia completa de todos los objetos en el directorio de su dominio y una copia parcial de todos los objetos de todos los demás dominios del bosque; esto permite a los usuarios y aplicaciones encontrar objetos en cualquier dominio de su bosque. Los equipos de escritorio, portátiles y otros dispositivos que ejecutan Windows (en vez de Windows Server) pueden formar parte de un entorno de Active Directory, pero no ejecutan AD DS.<br>AD DS se basa en varios protocolos y estándares establecidos, incluidos en el protocolo ligero de acceso a directorios, Kerberos y DNS (sistema de nombres de dominio).</p>
+                <img src="media/dos.png" width="800px">
+            </section>
+
+            <hr>
+
+            <section class="estructura">
+                <h2>¿Como es la Estructura?</h2>
+                <p class="parrafo"><b>AD</b> tiene tres niveles principales: <b>Dominios, Arboles y Bosques</b>. <br>Un dominio es un grupo de usuarios relacionados, computadoras y otros objetos de AD, como todos los objetos de AD para la oficina central de su empresa. Se pueden combinar varios dominios en un árbol y varios árboles se pueden agrupar en un bosque.<br><br>Un <b>Dominio</b> representa un límite de administración. Los objetos de un dominio determinado se almacenan en una única base de datos y se pueden administrar juntos. <br>Un <b>Bosque</b> representa un límite de seguridad. Los objetos de diferentes bosques no pueden interactuar entre sí a menos que los administradores de cada bosque creen una relación de confianza entre ellos. Por ejemplo, si tiene varias unidades de negocio que no estan conectadas, probablemente desee crear varios bosques.</p>
+                <img src="media/cuatro.jpg" width="800px">
+            </section>
+        </div>
+
+        <br>
+
+        <footer>
+            <section>
+                <a href="#header" id="comienzo">Ir al Comienzo</a>
+            </section>
+                 
+            <p>Lab de Redes de Area Local</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es-uy">
+    <head>
+        <title>LAN · Matias y Alter</title>
+        <link rel="icon" href="">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="portfolio, portafolio, webdesigner, webs, web">
+        <meta name="description" content="portfolio de kuda">
+        <meta name="author" content="KudaGH">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="nameWeb">LAB REDES  <span>TRABAJO</span></h1>
+            <nav class="web">
+                <a href="/clase/index/index.html">Home</a>
+                <a href="/clase/auten/auten.html">Kerberos</a>
+                <a href="/clase/recursos/recursos.html">Recursos</a>
+                <a href="/clase/redes/redes.html">Config Redes</a>
+                <a href="/clase/active/active.html">Active Dir</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <section class="Inicio">
+                <h1>Autenticacion Kerberos</h1>
+                <p class="parrafo">Kerberos es un servicio de verificación utilizado en redes informáticas abiertas o no seguras.<br><br>Este protocolo de seguridad sirve para autenticar las solicitudes de servicio entre dos o más hosts de confianza a través de una red no fiable, como Internet. El cifrado criptográfico y un tercero (también llamado trust third party) de confianza se utilizan para comprobar las aplicaciones cliente-servidor y verificar la identidad de los usuario</p>
+                <img src="media/kerb.png" width="800px">
+            </section>
+
+            <hr>
+
+            <section class="tercero">
+                <h2>Componentes principales de un trabajo típico de kerberos</h2>
+                <p class="parrafo"><b>Cliente</b>: actúa como representante del usuario e inicia la comunicación y la solicitud de servicio.<br>• <b>Servidor host</b>: es el servidor que aloja el servicio al que quiere acceder el usuario..<br>• <b>Servidor de autenticación (AS)</b>: realiza la autenticación del cliente deseada..<br>Si la autenticación se realiza con éxito, el AS emite un ticket para el cliente, el TGT (ticket-granting ticket). Este ticket garantiza a los demás servidores que el cliente está autenticado.<br>• <b>Ticket-granting server (TGS)</b>: es un servidor de aplicación que emite tickets de servicio..<br>• <b>Centro de distribución de claves (KDC)</b>: está formado por el servidor de autenticación (AS) y el ticket-granting server (TGS)..<br></p>
+                <img src="media/3ro.png" width="800px">
+            </section>
+
+            <hr>
+
+            <section class="cuarto">
+                <h2>¿Como funciona el proceso del protocolo?</h2>
+                <p class="parrafo">• <b>Paso 1</b>. El cliente realiza una solicitud cifrada al servidor de autenticación. Cuando el
+                    AS recibe la solicitud, busca la contraseña en la base de datos de Kerberos mediante
+                    el ID de usuario. Si la contraseña de usuario es correcta, el AS descifra la solicitud.<br><br>
+                    • <b>Paso 2</b>. Una vez se verifica el usuario, el AS emite un ticket-granting ticket (TGT),
+                    que se envía de vuelta al cliente..<br><br>
+                    • <b>Paso 3</b>. El cliente envía el TGT al ticket-granting server. Junto con el TGT, el cliente
+                    indica también el motivo de acceso al servidor de host. El TGS descifra el ticket con
+                    la clave secreta que comparten el AS y el TGS..<br><br>
+                    • <b>Paso 4</b>. Si el TGT es válido, el TGS emite un ticket de servicio para el cliente..<br><br>
+                    • <b>Paso 5</b>. El cliente envía el ticket de servicio al servidor de host. El servidor descifra el
+                    ticket con la clave secreta que comparten el servidor y el TGB..<br><br>
+                    • <b>Paso 6</b>. Si las claves secretas coinciden, el servidor de host permite al cliente
+                    acceder al servicio. El ticket de servicio determina el tiempo que el usuario puede
+                    utilizar el servicio. Una vez caduca el acceso, se puede renovar con el
+                    comando Kinit repitiendo de nuevo todo el protocolo de autenticación de Kerberos</p>
+                <img src="media/4to.png" width="800px">
+            </section>
+
+            <hr>
+
+            <section class="5to">
+                <h2>Ventajas y Desventajas de este protocolo</h2>
+                <p class="vent">• La autorización por parte de terceros lo convierte en uno de los
+                    <b>protocolos de verificación más seguros del mundo digital</b>.<br><br>
+                    • Utilizar <b>protocolos precisos</b> y transparentes es esencial para las
+                    auditorías de seguridad, tanto en las empresas grandes como
+                    pequeñas. También contribuye a mantener un excelente control de
+                    acceso<br></p><br>
+                <p class="desv">• Existen <b>estrictos requisitos de tiempo</b>: las configuraciones de fecha y
+                    hora de los hosts implicados deben estar siempre sincronizadas dentro
+                    de unos límites preestablecidos. Fuera de estos periodos, las
+                    autenticaciones dan error, porque los tickets solo están disponibles por
+                    tiempo limitado.<br><br>
+                    • Por otra parte, algunos <b>sistemas antiguos</b> no son compatibles con los
+                    mecanismos de autenticación de terceros. Asimismo, a pesar de que las
+                    contraseñas de la autenticación Kerberos suelen ser seguras, los hackers
+                    pueden obtenerlas mediante ataques de fuerza bruta o robarlas a través
+                    de phishing.<br></p>
+                <img src="media/5to.jpg" width="800px">
+            </section>
+        </div>
+
+        <br>
+
+        <footer>
+            <section>
+                <a href="#header" id="comienzo">Ir al Comienzo</a>
+            </section>          
+            <p>Lab de Redes de Area Local</p>
+        </footer>
+
+
+    </body>
+</html>

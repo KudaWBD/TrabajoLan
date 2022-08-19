@@ -1,0 +1,157 @@
+/*                                     Fonts                                */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/*                                     Inicio                                */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    background-color: rgb(20, 20, 20); 
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #faf8f8;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+/*                                     Header                                */
+
+header {
+    color: #faf8f8;
+    padding: 1rem 10rem;
+    text-decoration: none;
+}
+
+header h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    margin: 0% 20px;
+    text-decoration: none;
+    display: inline
+}
+
+
+header nav a:hover, header nav a:focus {
+    color: #faf8f8;
+    background-size: 100% 2px;
+}
+
+header nav {
+    padding: 2px;
+    float: right;
+}
+
+header nav a{
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: Poppins, sans-serif;
+    margin: 10px;
+    padding: 0;
+    color: #c7c5c5;
+    text-decoration: none;
+}
+
+header span{
+    background-color: #012761;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+/*                                   Container                                       */
+
+.container {
+    width: 95%;
+    margin: 0px auto;
+    border:1px solid #f3f2f2;
+    background-color: #f3f2f2;
+    border-radius: 10px;
+}
+
+.container h1{
+    margin: 20px 30px;
+    font-size: 42px;
+    text-decoration: underline;
+}
+
+.bolder{
+    font-family: Arial, sans-serif;
+    margin: 20px 150px 0px 30px;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.container h2{
+    margin: 20px 30px;
+    font-size: 38px;
+    text-decoration: underline;
+}
+
+div p{
+    font-family: Arial, sans-serif;
+    margin: 20px 150px 0px 30px;
+    font-size: 17px;
+}
+
+div b{
+    font-size: 20px;
+}
+
+.vent, .vent b{
+    color: darkgreen;
+    font-size: 17px;
+}
+
+
+.desv, .desv b{
+    color: darkred;
+    font-size: 17px;
+}
+
+img{
+    margin: 20px 30px;
+}
+
+
+
+
+/*                                   Footer                                       */
+
+
+
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color: #fff;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    margin: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
